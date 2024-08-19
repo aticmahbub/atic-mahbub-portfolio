@@ -1,7 +1,7 @@
 "use client"
 
 import { FaHtml5, FaCss3, FaNodeJs, FaReact,FaGithub, } from "react-icons/fa";
-import {SiTailwindcss, SiMongodb, SiJavascript} from 'react-icons/si'
+import {SiTailwindcss, SiMongodb, SiJavascript, SiFirebase} from 'react-icons/si'
 
 
 const Resume = () => {
@@ -65,6 +65,51 @@ const Resume = () => {
                 degree: "Hons in Development Studies",
                 passing: "2024"
             }
+        ]
+    }
+
+    const skills= {
+        title: "My skills",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quas sed delectus error iure obcaecati nesciunt iste rem a quia.",
+        skillset:[
+            {
+                icon: <FaHtml5/>,
+                name: "html 5"
+            },
+            
+            {
+                icon: <FaCss3/>,
+                name: "css 3"
+            },
+            {
+                icon: <SiJavascript/>,
+                name: "javascript"
+            },
+            {
+                icon: <FaReact/>,
+                name: "react"
+            },
+            {
+                icon: <FaNodeJs/>,
+                name: "nodejs"
+            },
+            {
+                icon: <SiMongodb/>,
+                name: "html5"
+            },
+            {
+                icon: <FaGithub/>,
+                name: "github"
+            },
+            {
+                icon: <SiTailwindcss/>,
+                name: "tailwindcss"
+            },
+            {
+                icon: <SiFirebase/>,
+                name: "firebase"
+            },
+
         ]
     }
     return (
