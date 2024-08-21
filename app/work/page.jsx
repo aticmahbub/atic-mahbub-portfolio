@@ -1,4 +1,5 @@
 "use client"
+
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
@@ -6,47 +7,49 @@ import "swiper/css"
 import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@radix-ui/react-tooltip';
 import Image from "next/image"
-import { useState } from 'react';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
-const projects = [
-    {
-        num: '01',
-        category: 'frontweb',
-        title: 'project 1',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
-        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-        image: '/assets/work/thumb1.png',
-        github: ""
-    },
-    {
-        num: '02',
-        category: 'frontweb',
-        title: 'project 1',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
-        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-        image: '/assets/work/thumb1.png',
-        github: ""
-    },
-    {
-        num: '03',
-        category: 'frontweb',
-        title: 'project 1',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
-        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-        image: '/assets/work/thumb1.png',
-        github: ""
-    },
-]
+import { useState } from 'react';
 
 const work = () => {
 
+    const projects = [
+        {
+            num: '01',
+            category: 'frontweb',
+            title: 'project 1',
+            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
+            stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+            image: '/assets/work/thumb1.png',
+            github: ""
+        },
+        {
+            num: '02',
+            category: 'frontweb',
+            title: 'project 1',
+            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
+            stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+            image: '/assets/work/thumb1.png',
+            github: ""
+        },
+        {
+            num: '03',
+            category: 'frontweb',
+            title: 'project 1',
+            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
+            stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+            image: '/assets/work/thumb1.png',
+            github: ""
+        }
+    ];
+    
 
-
-    const [project, setProject] = useState(projects[0])
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [project, setProject] = useState(projects[0]);
+    // const [project, setProject] =useState(projects[0]);
 
     const handleSlideChange = (swiper) =>{
         const currentIndex = swiper.activeIndex
-        setProject(projects[currentIndex])
+        setProject(projects[currentIndex]);
     }
     return (
         <motion.section
