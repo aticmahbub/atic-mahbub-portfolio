@@ -10,7 +10,7 @@ const Resume = () => {
     const about = {
         title: "About me",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor natus corrupti praesentium numquam nesciunt. Vel libero ex velit eum in.",
-        info: [
+        items: [
             {
                 fieldName: "Name",
                 fieldValue: "Atic Mahbub"
@@ -31,6 +31,10 @@ const Resume = () => {
             {
                 fieldName: "Email",
                 fieldValue: "aticcmahbub@gmail.com"
+            },
+            {
+                fieldName: "Profession",
+                fieldValue: "Web Developer"
             },
             {
                 fieldName: "Profession",
@@ -147,7 +151,7 @@ const Resume = () => {
                                             experience.items.map((item, index) => {
                                                 return <li
                                                     className="bg-#232329 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  gap-1 "
-                                                    key={item.index}>
+                                                    key={index}>
                                                     <span className="text-accent">{item.duration}</span>
                                                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                                                     <div className="flex items-center gap-3">
@@ -171,7 +175,7 @@ const Resume = () => {
                                             education.items.map((item, index) => {
                                                 return <li
                                                     className="bg-#232329 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  gap-1 "
-                                                    key={item.index}>
+                                                    key={index}>
                                                     <span className="text-accent">{item.passing}</span>
                                                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                                                     <div className="flex items-center gap-3">
@@ -214,27 +218,21 @@ const Resume = () => {
                             </div>
                         </TabsContent>
                         <TabsContent value="about" className="w-full ">
-                            <div className="flex flex-col gap-30 text-center xl:text-left">
-                                <h3 className="text-4xl font-bold">{education.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
-                                <ScrollArea className="h-[400px]">
-                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                                        {
-                                            experience.items.map((item, index) => {
-                                                return <li
-                                                    className="bg-#232329 h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start  gap-1 "
-                                                    key={item.index}>
-                                                    <span className="text-accent">{item.duration}</span>
-                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
-                                                    <div className="flex items-center gap-3">
-                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                                                        <p className="text-white/60">{item.company}</p>
-                                                    </div>
-                                                </li>
-                                            })
-                                        }
-                                    </ul>
-                                </ScrollArea>
+                            <div className="flex flex-col gap-[30px]">
+                                <h3 className="text-4xl font-bold">{about.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>    
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                                    {
+                                        about.items.map((item, index) =>{
+                                            return <li 
+                                            className="flex items-center justify-center xl:justify-start gap-4"
+                                            key={index}>
+                                                <span className="text-white/60">{item.fieldName}</span>
+                                                <span className="text-xl">{item.fieldValue}</span>
+                                            </li>
+                                        })
+                                    }
+                                </ul>
                             </div>
                         </TabsContent>
                     </div>
