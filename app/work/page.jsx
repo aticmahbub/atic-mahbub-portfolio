@@ -15,30 +15,33 @@ const work = () => {
     const projects = [
         {
             num: '01',
-            category: 'frontweb',
+            category: 'Delivery Matrix',
             title: 'project 1',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
-            stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+            stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }, {name:"React"}],
             image: '/assets/work/thumb1.png',
-            github: ""
+            github: "https://github.com/aticmahbub/delivery-matrix-client",
+            live: "https://atic-delivery-matrix.netlify.app/"
         },
         {
             num: '02',
-            category: 'frontweb',
-            title: 'project 1',
+            category: 'Mega Mart',
+            title: 'project 2',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
             stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
             image: '/assets/work/thumb1.png',
-            github: ""
+            github: "https://github.com/aticmahbub/mega-mart-client",
+            live: "https://github.com/aticmahbub/mega-mart-client"
         },
         {
             num: '03',
-            category: 'frontweb',
+            category: 'Casa Spot',
             title: 'project 1',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
             stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
             image: '/assets/work/thumb1.png',
-            github: ""
+            github: "https://github.com/aticmahbub/casa-spot",
+            live: "https://atic-casa-spot.netlify.app/"
         }
     ];
     
