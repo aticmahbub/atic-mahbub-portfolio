@@ -1,15 +1,32 @@
+"use client"
+
 /* eslint-disable react/no-unescaped-entities */
 import { Button } from '@/components/ui/button';
 import { FiDownload } from 'react-icons/fi';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Social from '@/components/Social';
 import Photo from '@/components/Photo';
 import Stats from '@/components/Stats';
 import Link from 'next/link';
+import Head from 'next/head';
+
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = "Atic Mahbub";
+  }, []);
   return <section className='h-full'>
+
+
     <div className="container mx-auto h-full">
+    <Head>
+        <title>{document.title}</title>
+        <meta
+          name="description"
+          content="example description"
+        />
+      </Head>
       <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
         {/* text */}
         <div className='text-center xl:text-left order-2 xl:order-none'>
@@ -24,7 +41,6 @@ const Home = () => {
               href='https://drive.google.com/file/d/1q-pbQOR_GyZ31HkOYqtvmq0fiRIdCL4G/view?usp=drive_link'
               >
             <Button
-              // href='https://drive.google.com/file/d/1q-pbQOR_GyZ31HkOYqtvmq0fiRIdCL4G/view?usp=drive_link'
               variant="outline"
               size="lg"
               className="uppercase flex  items-center gap-2"

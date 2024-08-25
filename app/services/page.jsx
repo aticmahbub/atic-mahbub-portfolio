@@ -2,6 +2,7 @@
 import { BsArrowDownRight } from 'react-icons/bs'
 import { Link } from 'next/link';
 import { easeIn,motion } from 'framer-motion';
+import Head from 'next/head';
 
 
 const Services = () => {
@@ -33,7 +34,12 @@ const Services = () => {
         },
     ]
     return (
+        
         <section className='min-h-[80] flex flex-col justify-center py-12 xl:py-0'>
+           <Head>
+      <title>My page title</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head> 
             <div className='container mx-auto'>
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
                 className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'

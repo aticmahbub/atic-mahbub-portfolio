@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import Head from "next/head";
 
 const info = [
     {
@@ -26,7 +27,13 @@ const info = [
     },
 ]
 const Contact = () => {
-
+<Head>
+        <title>{document.title}</title>
+        <meta
+          name="description"
+          content="example description"
+        />
+      </Head>
     return (
         <motion.section
             initial={{ opacity: 0 }}
