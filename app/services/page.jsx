@@ -9,27 +9,27 @@ const Services = () => {
     const services = [
         {
             num: "01",
-            title: "Web Development",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet culpa nemo fuga delectus ad itaque modi dolorum. Tenetur, minus.",
-            href: "vgbhn"
+            title: "Full-stack",
+            description: "I provide end-to-end development services that cover everything from the front end to the back end. Whether it's building responsive user interfaces or developing robust server-side applications, I ensure a seamless and integrated experience tailored specific needs.",
+            href: "contact"
         },
         {
             num: "02",
-            title: "UI/UX Designer",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet culpa nemo fuga delectus ad itaque modi dolorum. Tenetur, minus.",
-            href: "kmjkm"
+            title: "MERN Stack",
+            description: "Specialized in MERN stack development, combining MongoDB, Express, React, and Node.js to build high-performance web applications. Focused on delivering full-featured, interactive user experiences and efficient server-side operations. ",
+            href: "contact"
         },
         {
             num: "03",
-            title: "SEO",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet culpa nemo fuga delectus ad itaque modi dolorum. Tenetur, minus.",
-            href: "njmkl"
+            title: "Next JS",
+            description: "Expertise in Next.js development, offering services for building optimized, server-rendered applications using the React framework. Solutions include static site generation, server-side rendering, and seamless API integration. ",
+            href: "contact"
         },
         {
             num: "04",
-            title: "Security Researcher",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet culpa nemo fuga delectus ad itaque modi dolorum. Tenetur, minus.",
-            href: "bhnjkm"
+            title: "Web Design",
+            description: "Providing professional web design services that prioritize aesthetics, usability, and responsiveness. Focused on creating visually appealing and intuitive websites that reflect the brand's identity and engage the target audience.",
+            href: "contact"
         },
     ]
     return (
