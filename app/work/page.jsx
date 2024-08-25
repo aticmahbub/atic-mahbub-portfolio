@@ -17,8 +17,8 @@ const work = () => {
             num: '01',
             category: 'Delivery Matrix',
             title: 'project 1',
-            description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
-            stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }, {name:"React"}],
+            description: 'The project is basically built on MERN stack. For designing, I have implemented Tailwind CSS alongside shadCN. The database and APIs are managed using MongoDB and Node.js, respectively. .For authentication, I have utilized Firebase, Additionally, I have incorporated JSON Web Tokens to enhance the security of the website.',
+            stack: [{name:"React"}, {name:"Tailwind CSS"}, {name:"JSON WebTokens"}, {name:"Axios"}],
             image: '/assets/work/thumb1.png',
             github: "https://github.com/aticmahbub/delivery-matrix-client",
             live: "https://atic-delivery-matrix.netlify.app/"
@@ -28,7 +28,7 @@ const work = () => {
             category: 'Mega Mart',
             title: 'project 2',
             description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id quod. Dolores dolorum autem voluptates iste odit dolor sunt sapiente!',
-            stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+            stack: [{name:"React"}, {name:"Tailwind CSS"}, {name:"JSON WebTokens"}, {name:"Axios"}],
             image: '/assets/work/thumb1.png',
             github: "https://github.com/aticmahbub/mega-mart-client",
             live: "https://github.com/aticmahbub/mega-mart-client"
