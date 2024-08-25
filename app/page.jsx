@@ -5,6 +5,7 @@ import React from 'react';
 import Social from '@/components/Social';
 import Photo from '@/components/Photo';
 import Stats from '@/components/Stats';
+import Link from 'next/link';
 
 const Home = () => {
   return <section className='h-full'>
@@ -16,12 +17,14 @@ const Home = () => {
           <h1>
             Hello I'm <br /> <span className='text-accent'>Atic Mahbub</span>
           </h1>
-          <p className='max-w-[500px] mb-9 text-white/80'>I am proficient in building web apps which solves problems we face in our daily life
-          </p>
+          <p className='max-w-[500px] mb-9 text-white/80'>I am a passionate web developer specializing in  MERN stack, Next.js, and Web design.I offer to help businesses and individuals create modern, responsive, and user-friendly web applications. Explore my work and see how I can help bring your digital ideas to life."</p>
           {/* button and socials */}
           <div className='flex flex-col xl:flex-row items-center gap-2'>
+              <Link
+              href='https://drive.google.com/file/d/1q-pbQOR_GyZ31HkOYqtvmq0fiRIdCL4G/view?usp=drive_link'
+              >
             <Button
-              href={'https://drive.google.com/file/d/1q-pbQOR_GyZ31HkOYqtvmq0fiRIdCL4G/view?usp=drive_link'}
+              // href='https://drive.google.com/file/d/1q-pbQOR_GyZ31HkOYqtvmq0fiRIdCL4G/view?usp=drive_link'
               variant="outline"
               size="lg"
               className="uppercase flex  items-center gap-2"
@@ -29,6 +32,7 @@ const Home = () => {
               <span>Download CV</span>
               <FiDownload className='text-xl' />
             </Button>
+              </Link>
             <div className='mb-8 xl:mb-0'>
               <Social
                 containerStyles="flex gap-6"
