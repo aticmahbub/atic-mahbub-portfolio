@@ -37,7 +37,7 @@ const Services = () => {
         <section className='min-h-[80] flex flex-col justify-center py-12 xl:py-0'>
             
             <div className='container mx-auto'>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 1.7, duration: 0.3, ease: "easeIn" } }}
                 className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
                 >
                     {
